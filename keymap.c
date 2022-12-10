@@ -85,7 +85,7 @@ const rgblight_segment_t PROGMEM layer_function_lights[] = RGBLIGHT_LAYER_SEGMEN
 
 // _MOUSE   // light up top row
 const rgblight_segment_t PROGMEM layer_mouse_lights[] = RGBLIGHT_LAYER_SEGMENTS(
-    SET_UNDERGLOW(HSV_GREEN),
+    SET_UNDERGLOW(HSV_GREEN)
 );
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
