@@ -95,7 +95,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     layer_upper_lights,
     layer_lower_lights,
     layer_function_lights,
-    layer_mouse_lights,
+    layer_mouse_lights
 );
 
 layer_state_t layer_state_set_user(layer_state_t state) {
