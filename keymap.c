@@ -197,11 +197,6 @@ bool oled_task_user(void) {
 
 #endif
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _LOWER, _UPPER, _MOUSE);
-}
-
-
 #ifdef ENCODER_ENABLE
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
