@@ -24,7 +24,7 @@
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
     _DEFAULTS = 0,
-    _COLEMAK,
+    _COLEMAK = 0,
     _QWERTY,
     _UPPER,
     _LOWER,
