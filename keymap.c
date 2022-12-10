@@ -46,12 +46,12 @@ static void print_status_narrow(void) {
     oled_write_P(PSTR("\n\n"), false);
     oled_write_ln_P(PSTR("MODE"), false);
     oled_write_ln_P(PSTR(""), false);
-    if (keymap_config.swap_lctl_lgui) {
-        oled_write_ln_P(PSTR("MAC"), false);
-    } else {
-        oled_write_ln_P(PSTR("WIN"), false);
-    }
-
+    // if (keymap_config.swap_lctl_lgui) {
+    //     oled_write_ln_P(PSTR("MAC"), false);
+    // } else {
+    //     oled_write_ln_P(PSTR("WIN"), false);
+    // }
+    //
     switch (get_highest_layer(default_layer_state)) {
         case _QWERTY:
             oled_write_ln_P(PSTR("Qwrt"), false);
@@ -82,7 +82,7 @@ static void print_status_narrow(void) {
             oled_write_P(PSTR("Lower"), false);
             break;
         case _MOUSE:
-            oled_write_P(PSTR("Mouse\n"), false);
+            oled_write_P(PSTR("Mouse"), false);
             break;
         default:
             oled_write_ln_P(PSTR("Undef"), false);
