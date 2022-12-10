@@ -23,6 +23,7 @@
 
 enum sofle_layers {
     /* _M_XYZ = Mac Os, _W_XYZ = Win/Linux */
+    _DEFAULTS = 0,
     _COLEMAK,
     _QWERTY,
     _UPPER,
@@ -89,8 +90,8 @@ const rgblight_segment_t PROGMEM layer_mouse_lights[] =   RGBLIGHT_LAYER_SEGMENT
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 
-    layer_colemakdh_lights
-    layer_qwerty_lights
+    layer_colemakdh_lights,
+    layer_qwerty_lights,
     layer_upper_lights,
     layer_lower_lights,
     layer_function_lights,
@@ -98,7 +99,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 );
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    rgblight_set_layer_state(0, layer_state_cmp(state, _DEFAULTS) && layer_state_cmp(default_layer_state,_COLEMAKDH));
+    rgblight_set_layer_state(0, layer_state_cmp(state, _DEFAULTS) && layer_state_cmp(default_layer_state,_COLEMAK));
     rgblight_set_layer_state(1, layer_state_cmp(state, _DEFAULTS) && layer_state_cmp(default_layer_state,_QWERTY));
 
     rgblight_set_layer_state(2, layer_state_cmp(state, _UPPER));
