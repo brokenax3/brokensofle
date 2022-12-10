@@ -69,14 +69,14 @@ const rgblight_segment_t PROGMEM layer_colemak_lights[] = RGBLIGHT_LAYER_SEGMENT
 // Light on outer column and underglow
 const rgblight_segment_t PROGMEM layer_upper_lights[] = RGBLIGHT_LAYER_SEGMENTS(
     SET_UNDERGLOW(HSV_TEAL)
-
 );
+
 // _LOWER,
 // Light on inner column and underglow
 const rgblight_segment_t PROGMEM layer_lower_lights[] = RGBLIGHT_LAYER_SEGMENTS(
     SET_UNDERGLOW(HSV_BLUE)
+);
 
-    );
 // _FUNCTION,
 // Light on inner column and underglow
 const rgblight_segment_t PROGMEM layer_function_lights[] = RGBLIGHT_LAYER_SEGMENTS(
@@ -84,7 +84,7 @@ const rgblight_segment_t PROGMEM layer_function_lights[] = RGBLIGHT_LAYER_SEGMEN
 );
 
 // _MOUSE   // light up top row
-const rgblight_segment_t PROGMEM layer_mouse_lights[] =   RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM layer_mouse_lights[] = RGBLIGHT_LAYER_SEGMENTS(
     SET_UNDERGLOW(HSV_GREEN),
 );
 
