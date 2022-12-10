@@ -61,7 +61,7 @@ const rgblight_segment_t PROGMEM layer_qwerty_lights[] = RGBLIGHT_LAYER_SEGMENTS
   SET_UNDERGLOW(HSV_RED)
 );
 
-const rgblight_segment_t PROGMEM layer_colemakdh_lights[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM layer_colemak_lights_lights[] = RGBLIGHT_LAYER_SEGMENTS(
   SET_UNDERGLOW(HSV_PINK)
 );
 
