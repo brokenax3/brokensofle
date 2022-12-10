@@ -90,7 +90,7 @@ const rgblight_segment_t PROGMEM layer_mouse_lights[] =   RGBLIGHT_LAYER_SEGMENT
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 
-    layer_colemakdh_lights,
+    layer_colemak_lights,
     layer_qwerty_lights,
     layer_upper_lights,
     layer_lower_lights,
