@@ -20,9 +20,11 @@ for more options.
 #endif
 // #define ENCODER_DIRECTION_FLIP
 #undef ENCODER_RESOLUTION
-#define ENCODER_RESOLUTIONS {4, 2}
+#define ENCODER_RESOLUTION 4
+#define ENCODER_RESOLUTION_RIGHT 4
+// #define ENCODER_RESOLUTIONS {4, 2}
 
-// #define RGBLIGHT_SLEEP
+#define RGBLIGHT_SLEEP
 //
 #define RGBLIGHT_LAYERS
 
@@ -38,8 +40,9 @@ for more options.
 #ifdef RGBLIGHT_ENABLE
 #undef RGBLED_NUM
 
+// #define RGBLIGHT_EFFECT_PLAIN
 //#define RGBLIGHT_EFFECT_BREATHING
-//#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
 //#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 //#define RGBLIGHT_EFFECT_SNAKE
 //#define RGBLIGHT_EFFECT_KNIGHT
@@ -55,7 +58,7 @@ for more options.
     { 36, 36 }  // haven't figured out how to use this yet
 
 //#define RGBLED_NUM 30
-#define RGBLIGHT_LIMIT_VAL 120
+#define RGBLIGHT_LIMIT_VAL 100
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
@@ -73,7 +76,7 @@ for more options.
 // in milliseconds how frequently an animation will update the LEDs. 16 (16ms)
 // is equivalent to limiting to 60fps (increases keyboard responsiveness)
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS \
-    150  // limits maximum brightness of LEDs to 150 out of 255. Higher may
+    120  // limits maximum brightness of LEDs to 150 out of 255. Higher may
          // cause the controller to crash.
 
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_GRADIENT_LEFT_RIGHT

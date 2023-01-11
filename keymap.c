@@ -2,15 +2,15 @@
 
 #include QMK_KEYBOARD_H
 
-#define INDICATOR_BRIGHTNESS 30
+#define INDICATOR_BRIGHTNESS 20
 
 #define HSV_OVERRIDE_HELP(h, s, v, Override) h, s , Override
 #define HSV_OVERRIDE(hsv, Override) HSV_OVERRIDE_HELP(hsv,Override)
 
 // Light combinations
 #define SET_UNDERGLOW(hsv) \
-    {1, 6, hsv}, \
-    {35+1, 6,hsv}
+    {0, 6, hsv}, \
+    {35, 6,hsv}
 #define SET_LAYER_ID(hsv) \
     {0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
     {35+0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
