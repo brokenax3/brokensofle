@@ -29,7 +29,7 @@ for more options.
 #define RGBLIGHT_LAYERS
 
 /* ws2812 RGB LED */
-#define RGB_DI_PIN D3
+#define WS2812_DI_PIN D3
 
 #ifdef RGB_MATRIX_ENABLE
 #define RGBLED_NUM 36  // Number of LEDs
@@ -52,10 +52,10 @@ for more options.
 // #define RGBLIGHT_EFFECT_ALTERNATING
 // #define RGBLIGHT_EFFECT_TWINKLE
 
-#define RGBLED_NUM 72
+#define RGBLED_NUM 70
 // #define RGBLED_SPLIT
 #define RGBLED_SPLIT \
-    { 36, 36 }  // haven't figured out how to use this yet
+    { 35, 35 }  // haven't figured out how to use this yet
 
 // #define RGBLED_NUM 30
 #define RGBLIGHT_LIMIT_VAL 100
