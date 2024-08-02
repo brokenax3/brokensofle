@@ -37,11 +37,11 @@ for more options.
 // #endif
 
 #ifdef RGBLIGHT_ENABLE
-#undef RGBLED_NUM
+// #undef RGBLED_NUM
 
 // #define RGBLIGHT_EFFECT_PLAIN
 // #define RGBLIGHT_EFFECT_BREATHING
-#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+// #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 // #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 // #define RGBLIGHT_EFFECT_SNAKE
 // #define RGBLIGHT_EFFECT_KNIGHT
@@ -52,7 +52,6 @@ for more options.
 // #define RGBLIGHT_EFFECT_TWINKLE
 
 // #define RGBLED_NUM 70
-// #define RGBLED_SPLIT
 #undef RGBLED_SPLIT
 #define RGBLED_SPLIT { 35, 35 }  // haven't figured out how to use this yet
 

@@ -26,8 +26,8 @@ enum sofle_layers {
     _DEFAULTS = 0,
     _COLEMAK = 0,
     _QWERTY,
-    _UPPER,
     _LOWER,
+    _UPPER,
     _FUNCTION,
     _MOUSE,
 };
@@ -42,10 +42,10 @@ enum sofle_layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_COLEMAK] = LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, KC_U, KC_Y, KC_SCLN, KC_DEL, KC_LSFT, KC_A, KC_R, KC_S, KC_T, KC_G, KC_M, KC_N, KC_E, KC_I, KC_O, KC_QUOT, KC_LCTL, KC_Z, KC_X, KC_C, KC_D, KC_V, KC_MUTE, KC_TAB, KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, KC_ENT, KC_LALT, KC_LGUI, KC_SPC, MO(2), KC_ESC, KC_BSPC, MO(3), KC_ENT, MO(5), KC_NO),
 	[_QWERTY] = LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_DEL, KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_LCTL, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_MUTE, KC_TAB, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT, KC_LALT, KC_LGUI, KC_SPC, MO(2), KC_ESC, KC_BSPC, MO(3), KC_ENT, MO(5), KC_NO),
-	[_UPPER] = LAYOUT(KC_ESC, LGUI(KC_F1), LGUI(KC_F2), LGUI(KC_F3), LGUI(KC_F4), LGUI(KC_F5), LGUI(KC_F6), LGUI(KC_F7), LGUI(KC_F8), LGUI(KC_F9), LGUI(KC_F10), KC_BSPC, KC_TAB, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LSFT, KC_NO, KC_NUBS, KC_UNDS, KC_MINS, KC_PIPE, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_NO, KC_LCTL, KC_NO, KC_CIRC, KC_EQL, KC_PLUS, KC_GRV, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_NO, KC_NO, KC_LALT, KC_LGUI, KC_SPC, KC_TRNS, KC_ESC, KC_BSPC, MO(4), KC_ENT, KC_NO, KC_NO),
-	[_LOWER] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_TAB, KC_NO, KC_NO, KC_NO, KC_AT, KC_HASH, KC_AMPR, KC_LCBR, KC_RCBR, KC_NO, KC_NO, KC_NO, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_COLN, KC_GRV, KC_QUOT, KC_LBRC, KC_RBRC, KC_NO, KC_NO, KC_NO, KC_LCTL, KC_NO, KC_NO, KC_LT, KC_GT, KC_EXLM, KC_TRNS, KC_TRNS, KC_DQUO, KC_LPRN, KC_RPRN, KC_NO, KC_NO, KC_NO, KC_LALT, KC_LGUI, KC_SPC, MO(4), KC_ESC, KC_BSPC, KC_TRNS, KC_ENT, KC_NO, KC_NO),
-	[_FUNCTION] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_NO, DF(0), DF(1), KC_NO, KC_NO, KC_NO, KC_NO, KC_BRID, KC_BRIU, KC_NO, QK_BOOT, KC_NO, KC_NO, RGB_VAD, RGB_VAI, RGB_TOG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KX_CATG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPRV, KC_MPLY, KC_MNXT, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
-	[_MOUSE] = LAYOUT(KC_NO, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_NO, KC_NO, KC_WH_L, KC_WH_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, KC_BTN1, KC_BTN2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_WH_U, KC_WH_D, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS)
+	[_LOWER] = LAYOUT(KC_ESC, LGUI(KC_F1), LGUI(KC_F2), LGUI(KC_F3), LGUI(KC_F4), LGUI(KC_F5), LGUI(KC_F6), LGUI(KC_F7), LGUI(KC_F8), LGUI(KC_F9), LGUI(KC_F10), KC_BSPC, KC_TAB, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO, KC_LSFT, KC_NO, KC_NUBS, KC_UNDS, KC_MINS, KC_PIPE, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_NO, KC_LCTL, KC_NO, KC_NO, KC_EQL, KC_PLUS, KC_TILD, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_NO, KC_NO, KC_LALT, KC_LGUI, KC_SPC, KC_TRNS, KC_ESC, KC_BSPC, MO(4), KC_ENT, KC_NO, KC_NO),
+	[_UPPER] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_TAB, KC_NO, KC_NO, KC_NO, KC_AT, KC_HASH, KC_AMPR, KC_LCBR, KC_RCBR, KC_NO, KC_NO, KC_NO, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_COLN, KC_GRV, KC_DQUO, KC_LBRC, KC_RBRC, KC_NO, KC_NO, KC_NO, KC_LCTL, KC_NO, KC_NO, KC_LT, KC_GT, KC_EXLM, KC_TRNS, KC_TRNS, KC_QUOT, KC_LPRN, KC_RPRN, KC_NO, KC_NO, KC_NO, KC_LALT, KC_LGUI, KC_SPC, MO(4), KC_ESC, KC_BSPC, KC_TRNS, KC_ENT, KC_NO, KC_NO),
+	[_FUNCTION] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_BOOT, KC_NO, DF(0), DF(1), KC_NO, KC_NO, KC_NO, KC_NO, KC_BRID, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, RGB_VAD, RGB_VAI, RGB_TOG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KX_CATG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPRV, KC_MPLY, KC_MNXT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO),
+	[_MOUSE] = LAYOUT(KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_NO, KC_NO, KC_NO, KC_MS_U, KC_NO, KC_NO, KC_NO, KC_NO, KC_WH_L, KC_WH_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, KC_BTN1, KC_BTN2, KC_NO, KC_NO, KC_NO, KC_NO, KC_CUT, KC_COPY, KC_PSTE, KC_FIND, KC_NO, KC_NO, KC_NO, KC_NO, KC_WH_U, KC_WH_D, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS)
 };
 
 #if defined(KEY_CANCELLATION_ENABLE)
@@ -65,7 +65,7 @@ char layer_state_str[70];
 // QWERTY,
 // Light on inner column and underglow
 const rgblight_segment_t PROGMEM layer_qwerty_lights[] = RGBLIGHT_LAYER_SEGMENTS(
-  SET_UNDERGLOW(HSV_RED)
+  SET_UNDERGLOW(HSV_ORANGE)
 );
 
 const rgblight_segment_t PROGMEM layer_colemak_lights[] = RGBLIGHT_LAYER_SEGMENTS(
@@ -99,8 +99,8 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 
     layer_colemak_lights,
     layer_qwerty_lights,
-    layer_upper_lights,
     layer_lower_lights,
+    layer_upper_lights,
     layer_function_lights,
     layer_mouse_lights
 );
@@ -109,8 +109,8 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_layer_state(0, layer_state_cmp(state, _DEFAULTS) && layer_state_cmp(default_layer_state,_COLEMAK));
     rgblight_set_layer_state(1, layer_state_cmp(state, _DEFAULTS) && layer_state_cmp(default_layer_state,_QWERTY));
 
-    rgblight_set_layer_state(2, layer_state_cmp(state, _UPPER));
-    rgblight_set_layer_state(3, layer_state_cmp(state, _LOWER));
+    rgblight_set_layer_state(2, layer_state_cmp(state, _LOWER));
+    rgblight_set_layer_state(3, layer_state_cmp(state, _UPPER));
     rgblight_set_layer_state(4, layer_state_cmp(state, _FUNCTION));
     rgblight_set_layer_state(5, layer_state_cmp(state, _MOUSE));
     return state;
