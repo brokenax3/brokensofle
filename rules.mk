@@ -1,4 +1,4 @@
-BOOTLOADER = caterina
+BOOTLOADER = atmel-dfu
 OLED_ENABLE = no
 ENCODER_ENABLE = yes
 CONSOLE_ENABLE = no
